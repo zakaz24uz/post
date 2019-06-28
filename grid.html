@@ -9,6 +9,7 @@
 		.flex-container {
 		  display: flex;
 		  flex-flow: row wrap;
+		  align-items: flex-start;
 		} .flex-container > div {
 		  background-color: #f1f1f1;
 		  margin: 10px;
@@ -23,6 +24,14 @@
 			font-weight: bolder;
 		} h2, h3 {
 		    margin: 0 !important;
+		} h2.overflow {
+			white-space: nowrap; 
+  			width: 200px; 
+  			overflow: hidden; 
+  			text-overflow:ellipsis;
+  			z-index: 100000
+		} h2.overflow:hover {
+			overflow: visible;
 		}
     </style>
 </head>
@@ -39,7 +48,7 @@
 						<div class="amyra-lite-post-grid-content no-thumb-image">
 							<a href="https://zakaz24.uz/uy-joy/test/" title="test"><img src="https://zakaz24.uz/wp-content/uploads/2019/05/evgeniikachkaev_58408953_133063961091999_2603539201695555081_n.jpg" alt=""></a>
 							<div class="entry-content clas">
-								<h2 class="entry-title"><a href="https://zakaz24.uz/uy-joy/test/" rel="bookmark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, corporis?</a></h2>
+								<h2 class="entry-title overflow"><a href="https://zakaz24.uz/uy-joy/test/" rel="bookmark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, corporis?</a></h2>
 									<h3>80.000 UZS</h3>
 									<span class="tel"><a href="tel:+998912970954">+998912970954</a></span>
 								<!-- Post Edit link -->
